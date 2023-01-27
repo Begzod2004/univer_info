@@ -3,9 +3,8 @@ from apps.universities.models import *
 
 
 
-# class CategorySerializer(serializers.ModelSerializer):
+class UniversitiesSerializer(serializers.ModelSerializer):
 
-#     class Meta:
-#         model = Category
-#         fields = '__all__'
-    
+    class Meta:
+        model = Universities
+        fields = ('id','degree','title','country','province','tuition_fees','acceptance_rate','location','programs','image','ielts','toefle','sat','gre','gmat','phone_number','email','description','date_created','is_active',)
