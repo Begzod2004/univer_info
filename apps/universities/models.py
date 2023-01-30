@@ -18,11 +18,11 @@ class Universities(models.Model):
     programs = models.CharField(max_length=123,help_text="Yonalishlari")
     image = models.ImageField(upload_to='univer/')
 # Language score
-    ielts = models.FloatField(help_text="Ilts darajasi") #null bolishi munkun
-    toefle = models.IntegerField(help_text="Amerika til darsajasi") #null
-    sat = models.IntegerField(help_text="matematika va inglis tili darajasi") #null
-    gre = models.CharField(max_length=123, help_text="imtihon score") #null
-    gmat = models.FloatField(max_length=123, help_text="magistratura uchun inglis tili va matematika") #null
+    ielts = models.FloatField(help_text="Ilts darajasi",null=True,blank=True) #null bolishi munkun
+    toefle = models.IntegerField(help_text="Amerika til darsajasi",null=True,blank=True) #null
+    sat = models.IntegerField(help_text="matematika va inglis tili darajasi",null=True,blank=True) #null
+    gre = models.CharField(max_length=123, help_text="imtihon score",null=True,blank=True) #null
+    gmat = models.FloatField(max_length=123, help_text="magistratura uchun inglis tili va matematika", null=True,blank=True) #null
 # Contact
     phone_number = models.CharField(max_length=12)
     email = models.EmailField()

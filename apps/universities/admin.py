@@ -6,4 +6,3 @@ from .models import *
 class UNIVERSITIESAdmin(admin.ModelAdmin):
     list_display = ['title','is_active']
     list_filter = ['is_active']
-

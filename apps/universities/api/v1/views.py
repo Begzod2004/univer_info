@@ -16,7 +16,11 @@ class UniversitiesCreateAPIView(CreateAPIView):
     parser_classes = (FormParser, MultiPartParser)
 
 
-class UniversitiesViewSet(ModelViewSet):
-    queryset = Universities.objects.all()
-    serializer_class = UniversitiesSerializer
-    parser_classes = (FormParser, MultiPartParser)
+
+
+
+
+# class UniversitiesViewSet(ModelViewSet):
+#     queryset = Universities.objects.all()
+#     serializer_class = UniversitiesSerializer
+#     parser_classes = (FormParser, MultiPartParser)
